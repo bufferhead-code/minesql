@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  minesql:
+    build: .
+    volumes:
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf:ro
+    environment:
+      MYSQL_ONETIME_PASSWORD: "false"
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "password"
+      MYSQL_DATABASE: "public"
+    ports:
+      - "33063:3306"

@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+.idea
+bundle.js
+mysql-enterprise-8.2.0_el9_aarch64_bundle.tar
+mysql-enterprise-8.2.0-javascript_el9_x86_64_bundle.tar
+mysql-enterprise-8.2.0-javascript_el9_x86_64_bundle
